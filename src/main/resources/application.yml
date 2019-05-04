@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: test
+  main:
+    web-application-type: none
+
+test:
+  spark:
+    enabled: true
+    app-name: test
+    run-app-name: demo-app
+    spark-home: /Users/zhangyaxing/Desktop/spark
+    master-url: local[2]
+
+  hdfs:
+    name-node-name: nothing
+
+  db:
+    database-configs:
+      - name: localhost
+        host: 192.168.199.113
+        port: 3306
+        username: root
+        password: root
